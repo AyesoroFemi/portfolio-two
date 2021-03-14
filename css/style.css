@@ -1,11 +1,10 @@
-@font-face{
-    font-family:"Lora";
-    src:url("../fonts/Lora-Regular.ttf")
-    /* src:url("../Lora/Lora-Regular.ttf"); */
-}
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap');
+
 @font-face{
     font-family:"Sofia Pro";
-    src:url("../fonts/Sofia-Pro-Regular.otf");
+    /* src:url("../fonts/Sofia-Pro-Regular.otf"); */
+    src:url("../fonts/Sofia\ Pro\ Light.otf");
+
 }
 
 * {
@@ -39,12 +38,12 @@
     box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
     /* margin: 0 0; */
  }
- .navbar .logo{
+ /* .navbar .logo{
     font-family: var(--mainFont);
     border: 2px solid red;
     border-radius: 50%;
     padding: 5px;
- }
+ } */
 
 .navbar ul{
     display: flex;
@@ -54,6 +53,7 @@
 }
 .navbar li{
     list-style: none;
+    font-weight:600;
 }
 .navbar li a{
     text-decoration:none;
@@ -101,31 +101,33 @@
     color: white;
     padding: 1.25rem;
     /* background-color: red; */
-   
+   font-weight:600;
 }
 
 .name{
     /* text-align:center; */
     font-family: var(--mainFont);
     padding: 10px 0;
-    font-size: clamp(32px, 5vw, 52px);
+    font-size: clamp(34px, 5vw, 52px);
 }
 
 .label-text .btn{
     margin-top: 40px;
-    /* border: 1px solid red; */
 }
 .btn a{
-    border: 2px solid blue;
+    border: 3px solid blue;
     padding: 10px 30px;
     border-radius: 10px 0 10px 0;
     text-decoration: none;
     background-color: transparent;
     color: whitesmoke;
+    /* outline: 2px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.7);
+
 }
 .btn a:hover{
     cursor: pointer;
-    transform: scale(0.98);
+    transform: scale(0.89);
     /* background-color: white; */
     color: grey;
 }
@@ -159,6 +161,7 @@
 .about-me h1{
     margin: 20px 0;
     font-family: var(--mainFont);
+    color:rgb(61, 61, 61);
 }
 
 .download{
@@ -193,10 +196,11 @@
  .skill h1{
     margin: 20px 0;
     font-family: var(--mainFont);
+    color:rgb(61, 61, 61);
 }
  .skill ul{
      display: flex;
-     gap: 10px;
+     gap: 20px;
      list-style-type:none;
      flex-wrap: wrap;
      background-color:#3c3c3c;
@@ -208,10 +212,10 @@
  .skill li{
      text-decoration: none;
      /* border: 2px solid red; */
-     padding: 10px 30px;
+     padding: 10px 20px;
      box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
      background-color: white;
-
+    font-weight: 600;
  }
  /* Show works */
 #works h1 {
@@ -220,6 +224,7 @@
     font-family: var(--mainFont);
     margin-bottom: 30px;
     font-size: clamp(32px, 5vw, 36px);
+    color:rgb(61, 61, 61);
 }
  .grid-works{
     /* margin-top: 100px; */
@@ -234,8 +239,12 @@
     
 }
 .work-space{
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
     /* border: 1px solid red; */
+}
+.work-space:hover{
+    /* box-shadow: 1px 3px 5px rgba(0,0,0,0.5); */
+     box-shadow: 3px 5px 10px rgba(136, 132, 132, 0.8);
 }
 .image-work{
     height: 200px;
@@ -246,14 +255,17 @@
 
 .grid-works div h3{
     padding:10px;
+    font-family: var(--mainFont);
+    color:rgb(61, 61, 61);
 }
 .grid-works div p{
     padding:10px;
 }
 .btn-works{
+    padding-bottom:20px;
 }
 .btn-works a{
-    /* border: 2px solid blue; */
+   font-weight: 600;
     padding: 20px 10px;
     /* border-radius: 10px 0 10px 0; */
     text-decoration: none;
@@ -327,6 +339,11 @@
     padding-top: 20px;
 }
 @media (max-width: 500px) {
+    #home{
+        background-color:#1f1f1f;
+        min-height: 400px;
+        padding: 15px;
+    }
     .grid{
         /* margin-top: 100px;
         margin-bottom: 100px; */
@@ -334,6 +351,13 @@
         gap: 30px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
+    }
+    .label-text{
+        /* font-family: var(--bodyFont); */
+        color: white;
+        /* padding: 1.25rem; */
+        /* background-color: red; */
+       font-weight:600;
     }
     .image img{
         height: 400px;
@@ -364,6 +388,9 @@
         grid-template-columns: 1fr;
         min-height: 400px;
         
+    }
+    .work-space{
+        margin: 10px 0;
     }
 }
 @media (max-width: 750px) {
@@ -404,5 +431,8 @@
         grid-template-columns: 1fr;
         min-height: 400px;
         
+    }
+    .work-space{
+        margin: 10px 0;
     }
 }
