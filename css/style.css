@@ -390,7 +390,7 @@
         
     }
     .work-space{
-        margin: 10px 0;
+        margin: 20px 0;
     }
 }
 @media (max-width: 750px) {
@@ -419,7 +419,7 @@
         align-items: center;
         /* background-color: #f5f5f5; */
         /* border-radius: 10px 10px 0 0; */
-        padding: 10px;
+        padding: 20px;
         /* box-shadow: 3px 5px 10px rgba(114, 110, 110, 0.3); */
         
     }
