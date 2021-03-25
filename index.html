@@ -11,18 +11,20 @@
 <body>
     
     
-        <div class="container-fluid">
-            <div class="navbar">
-              <div class="logo"> <h4>AOE</h4></div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <nav class="navbar">
+        <a href="/" class="navbar__logo">FA</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+        <div class="navbar__menu">
+            <a href="/" class="navbar__link">Home</a>
+            <a href="#about" class="navbar__link">About</a>
+            <a href="#works" class="navbar__link">Projects</a>
+            <a href="#contact" class="navbar__link">Contact</a>
+        </div>
+    </nav>
     
     <section id="home">
         <div class="container grid">
@@ -165,6 +167,6 @@
          </div>
         </div>
     </section>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
