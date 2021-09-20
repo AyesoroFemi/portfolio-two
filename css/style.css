@@ -167,6 +167,7 @@
 }
 .fab{
     color:grey;
+
 }
 .about-me {
     margin-top: 50px;
@@ -224,12 +225,17 @@
  }
  .skill li{
      text-decoration: none;
+     display: flex;
+     align-items: center;
      /* border: 2px solid red; */
      padding: 10px 20px;
      /* margin:10px; */
      box-shadow: 1px 3px 5px rgba(0,0,0,0.4);
      background-color: white;
     font-weight: 600;
+ }
+ .skill li .fab{
+     padding: 0 5px;
  }
  /* Show works */
 #works h1 {
@@ -343,7 +349,7 @@
     margin: 10px 0;
     width: 100%;
     padding: 10px 0;
-    background-color: dodgerblue;
+    background-color: grey;
     border: none;
     cursor:pointer;
     color: white;
